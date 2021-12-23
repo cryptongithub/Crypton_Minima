@@ -112,7 +112,7 @@ Type=simple
 ExecStart=/usr/bin/java -Xmx1G -jar $HOME/$MINIMA_JAR_NAME $MINIMA_PARAMS
 Restart=always
 RuntimeMaxSec=21600
-RestartSec=100
+RestartSec=10
 [Install]
 WantedBy=multi-user.target
 
