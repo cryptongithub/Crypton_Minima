@@ -1,8 +1,5 @@
 #!/bin/sh
 
-curl -s https://raw.githubusercontent.com/cryptongithub/init/main/logo.sh | bash && sleep 1
-echo '\n\e[42mMinima Update\e[0m\n' && sleep 2
-
 set -e
 
 CLEAN_FLAG=''
