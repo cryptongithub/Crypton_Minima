@@ -1,4 +1,8 @@
 #!/bin/sh
+
+curl -s https://raw.githubusercontent.com/cryptongithub/init/main/logo.sh | bash && sleep 1
+echo '\n\e[42mMinima Update\e[0m\n' && sleep 2
+
 set -e
 
 CLEAN_FLAG=''
@@ -59,4 +63,3 @@ CMD="$HOME/minima_service.sh $@"
 /bin/sh -c "$CMD"
 
 echo "Install complete - showing logs now -  Ctrl-C to exit logs, minima will keep running"
-journalctl -fn 10 -u minima_$PORT
