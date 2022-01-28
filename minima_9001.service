@@ -1,11 +1,11 @@
 [Unit]
-Description=minima_9001
+Description=minima_$PORT
 [Service]
 User=minima
 Type=simple
-ExecStart=/usr/bin/java -Xmx1G -jar /home/minima/minima.jar -daemon -port 9001 -data /home/minima/.minima_9001 -rpcenable -rpc 9002
+ExecStart=/usr/bin/java -Xmx1G -jar $HOME/$MINIMA_JAR_NAME $MINIMA_PARAMS
 Restart=always
 RuntimeMaxSec=21600
-RestartSec=10
+RestartSec=100
 [Install]
 WantedBy=multi-user.target
