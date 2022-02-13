@@ -5,7 +5,8 @@ PATH=/sbin:/bin:/usr/bin
 curl -s https://raw.githubusercontent.com/cryptongithub/init/main/logo.sh | bash && sleep 1
 echo '\n\e[42mMinima Node Installation\e[0m\n' && sleep 2
 
-apt install jq -y && apt install curl -y
+apt install jq -y 
+apt install curl -y
 
 CLEAN_FLAG=''
 PORT=''
